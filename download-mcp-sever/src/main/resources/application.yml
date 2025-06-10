@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: yu-image-search-mcp-server
+  profiles:
+    active: stdio
+  ai:
+    mcp:
+      server:
+        name: download-search-mcp-server
+        version: 0.0.1
+        type: SYNC
+        # stdio
+        stdio: true
+  # stdio
+  main:
+    web-application-type: none
+    banner-mode: off
+
+server:
+  port: 8127
